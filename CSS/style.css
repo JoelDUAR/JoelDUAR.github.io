@@ -1,0 +1,200 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #F3F5FC;
+}
+
+.invisible {
+    display: none;
+}
+
+main {
+    width: 100%;
+    height: 56.25rem;
+}
+
+.text{
+font-family: 'Inter', sans-serif;
+}
+
+#logo{
+    position: absolute;
+    width: 1.94rem;
+    height:3rem;
+    margin: 2.5rem 0 58.5rem 5.25rem;
+}
+
+#formulario{
+    display: flex;
+}
+
+#texto-ingreso{
+    position: absolute;
+    width: 36.06rem;
+    height: 3rem;
+    margin: 10.5rem 38.94rem 0 15rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    vertical-align: top;
+    color: #0A3871 solid;
+    background: #F3F5FC;
+    border: none;
+}
+
+.mensaje{
+    position: absolute;
+    margin: 16.5rem 38.94rem 0 15rem;
+    color:red;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+.aviso{
+    display: inline-block;
+    width: 25rem;
+    height: 1.125rem;
+    margin: 52.19rem 60.69rem 0 15rem;
+    gap: 8px;
+}
+
+#signo-atencion{
+    width: 1rem;
+    height: 1rem;
+}
+
+.aviso-atencion{
+    width: 12.81rem;
+    height: 1.125rem;
+    margin-left: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    opacity: 70%;   
+}
+
+.contenedor-botones{
+    position: absolute;
+    width: 43.75rem;
+    height:4.19rem;
+    margin: 1rem 32.5rem 4.5rem 15rem;
+}
+
+.btn{
+    position: static;
+    width: 20.5rem;
+    height: 4.19rem;
+    border-radius: 24px;
+}
+
+.boton-primario{
+    background: #0A3871;
+    color: #ffffff;
+}
+
+.boton-secundario{
+    margin-left: 1.5rem;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+}
+
+.presentacion{
+    position: absolute;
+    width: 25rem;
+    height: 58.12rem;
+    margin: 2.5rem 2.5rem 2.5rem 67.5rem;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    background: #ffffff;
+}
+
+.munieco{
+    width: 21rem;
+    height: 19rem;
+    margin: 15.19rem 2rem 2rem 2rem;
+    vertical-align: top;
+}
+
+.contenedor-textos{
+    display:block;
+    position: absolute;
+    width: 21rem;
+    height: 13.87rem;
+    margin: 36.81rem 2rem 15.19rem 2rem;
+}
+
+.alerta{
+    width: 21rem;
+    height: 3.62rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    Line-height: 29px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.pedido-ingresar{
+    width: 21rem;
+    height: 58px;
+    margin: 1rem 1.87rem 0 2rem;
+    font-size: 1rem;
+    Line-height: 29px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#transformado{
+    position: absolute;
+    width: 21rem;
+    height: 48.81rem;
+    margin: 2rem 2rem 8.19rem 2rem;
+    border: none;
+    font-size: 16px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: oblique;
+}
+
+#copiar{
+    position: absolute;
+    width: 21rem;
+    height: 4.19rem;
+    margin: 51.87rem 2rem 2rem 2rem;
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background: #FFFFFF;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center; 
+}
+
+#copiarVerde{
+    position: absolute;
+    width: 21rem;
+    height: 4.19rem;
+    margin: 51.87rem 2rem 2rem 2rem;
+    color: #4cd362;
+    border: 1px solid #4cd362;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background: #FFFFFF;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center; 
+}
+
+footer{
+    position: absolute;
+    text-align: center;
+    width: 85rem;
+    height: 1.87rem;
+    margin: 6.12rem 0 0 0;
+}
