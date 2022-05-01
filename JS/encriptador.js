@@ -13,23 +13,27 @@ botonEncriptar.addEventListener("click", function(event){
         mostrarErrores(errores);
         return;
     }
-    //form.reset();    
-    
+    form.reset();
     let mensaje = document.querySelector(".mensaje");
     mensaje.innerHTML = ""; 
-    llamadoElementos(); 
+    llamarElementos(); 
     textoInput.classList.add("invisible");
-
+    encriptar(textoIngresado);
 })
 
-function llamadoElementos(){
+function encriptar(textoIngresado){
+    textoImpreso.classList.remove("invisible");
+    let textoEncriptado = textoIngresado.replace(/e/gi,"enter").replace(/i/gi,"ines").replace(/a/gi,"ai").replace(/o/gi,"ober").replace(/u/gi,"ufat");
+    textoImpreso.textContent = textoEncriptado
+}
+
+function llamarElementos(){
     let frente = document.querySelector("#frente");
     frente.classList.add("invisible"); 
     let dorso = document.querySelector("#dorso");
     dorso.classList.remove("invisible");
     let botonCopiar = document.querySelector("#copiar");
     botonCopiar.classList.remove("invisible");
-    textoImpreso.classList.remove("invisible");
 }
    
 function validarInput(textoIngresado){
