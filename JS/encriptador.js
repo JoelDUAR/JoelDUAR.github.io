@@ -9,13 +9,13 @@ botonEncriptar.addEventListener("click", function(event){
     let textoInput = document.querySelector("#texto-ingreso");
     let textoIngresado = textoInput.value;
     let errores = [];
-    let patron = /^[a-z]$/;
+    let patron = /[^a-z]\s/;
     let expresion = new RegExp(patron,"g");
     if(textoIngresado == 0){
         errores.push("Ingrese texto") 
         return mostrarErrores(errores);
     }
-    if(!expresion.test(textoIngresado)){
+    if(expresion.test(textoIngresado)){
         errores.push("Valor Incorrecto");
         return mostrarErrores(errores)
     }
