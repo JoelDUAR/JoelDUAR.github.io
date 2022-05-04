@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <body>
     <main>
-        <section id="logo" class="auto-layout">
-            <img src="./assets/Logo.png" alt="Logo Alura">
-        </section>
-        <section id="formulario">
-            <article>
+        <section class="seccion1">
+            <article id="logo">
+                <img src="./assets/Logo.png" alt="Logo Alura">
+            </article>
+            <article id="formulario">
                 <form id="form">
-                    <div>
+                    <div class="contenedorInput">
                         <label for="texto-ingreso"></label>
                         <input type="text" id="texto-ingreso" name="texto-ingreso" placeholder="Ingrese el texto aquí" class="text">
                         <ul class="mensaje text"></ul>
@@ -31,19 +30,21 @@
                      </div>              
                 </form> 
             </article>
+        </section>
+        <section class="seccion2">
             <article class="presentacion" id="frente">
                 <img src="./assets/Muñeco.png" alt="Muñeco" class="munieco">
-                <p class="alerta text">Nungún mensaje fue encontrado</p>
-                <p class="pedido-ingresar text">Ingresa el texto que desees encriptar o desencriptar.</p>
                 <div class="contenedor-textos">
-                    
+                    <p class="alerta text">Nungún mensaje fue encontrado</p>
+                    <p class="pedido-ingresar text">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
+                
             </article>
             <article class="invisible presentacion" id="dorso">
                 <p id="transformado" class="invisible text"></p> 
                 <button id="copiar" class="invisible text">Copiar</button>
                 <button id="copiarVerde" class="invisible text">Copiado</button>
-            </article>         
+            </article>
         </section>
     </main>
     <footer>
@@ -53,7 +54,5 @@
     <script src="./JS/encriptador.js"></script>
     <script src="./JS/copiar.js"></script>
     <script src="./JS/desencriptar.js"></script>
-
-
 </body>
 </html>

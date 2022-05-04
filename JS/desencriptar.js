@@ -4,16 +4,17 @@ let botonDesencriptar = document.querySelector(".boton-secundario")
 botonDesencriptar.addEventListener("click", function(evento){
     evento.preventDefault();
     let form = document.querySelector("#form")
-    
+    llamarElementos()
     desencriptar()
     resetearBotonCopiar()
     form.reset();
 })
 
 function desencriptar(){
+    textoImpreso.classList.remove("invisible");
     let textoInput = document.querySelector("#texto-ingreso");
     textoIngresado = textoInput.value;
-    let textoDesencriptado = textoIngresado.replace(/enter/gi,"e").replace(/ines/gi,"i").replace(/ai/gi,"a").replace(/ober/gi,"o").replace(/ufat/gi,"u");
+    let textoDesencriptado = textoIngresado.replace(/enter/gi,"e").replace(/imes/gi,"i").replace(/ai/gi,"a").replace(/ober/gi,"o").replace(/ufat/gi,"u");
     textoImpreso.textContent = textoDesencriptado
 }
 

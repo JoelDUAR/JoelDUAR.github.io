@@ -1,3 +1,8 @@
+*{
+    margin:0;
+    padding:0;
+}
+
 body{
     position: relative;
     width: 100%;
@@ -7,12 +12,22 @@ body{
 
 .invisible {
     display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
 }
 
 main {
-    width: 100%;
-    height: 56.25rem;
+    display: flex;
+    width: 100vw;
+    height: 95vh;
 }
+
+.seccion1 {
+    width: 70vw;
+}
+
 
 .text{
 font-family: 'Inter', sans-serif;
@@ -20,25 +35,27 @@ font-family: 'Inter', sans-serif;
 
 #logo{
     position: absolute;
-    width: 1.94rem;
-    height:3rem;
-    margin: 2.5rem 0 58.5rem 5.25rem;
+    width: 32px;
+    height:48px;
+    padding: 2% 0 0 4% ;
 }
 
-#formulario{
-    display: flex;
+.contenedorInput{
+    display: block;
+    width: 24vw;
+    height:18vh;
+    margin: 15vh 0 0 15vw;
 }
 
 #texto-ingreso{
+    display: block;
     position: absolute;
-    width: 36.06rem;
-    height: 3rem;
-    margin: 10.5rem 38.94rem 0 15rem;
+    width: 36vw;
+    height: 6vh;
     font-style: normal;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 200%;
     line-height: 3rem;
-    vertical-align: top;
     color: #0A3871 solid;
     background: #F3F5FC;
     border: none;
@@ -46,7 +63,7 @@ font-family: 'Inter', sans-serif;
 
 .mensaje{
     position: absolute;
-    margin: 16.5rem 38.94rem 0 15rem;
+    margin-top: 6vh;
     color:red;
     font-style: italic;
     text-decoration: underline;
@@ -55,40 +72,40 @@ font-family: 'Inter', sans-serif;
 
 .aviso{
     display: inline-block;
-    width: 25rem;
-    height: 1.125rem;
-    margin: 52.19rem 60.69rem 0 15rem;
-    gap: 8px;
+    width: 25vwz;
+    height: 3vh;
+    margin: 43vh 0 0 15vw;
+    align-items: center;
 }
 
 #signo-atencion{
-    width: 1rem;
-    height: 1rem;
+    width: 16px;
+    height: 16px;
 }
 
 .aviso-atencion{
-    width: 12.81rem;
-    height: 1.125rem;
-    margin-left: 1.5rem;
+    width: 205px;
+    height: 18px;
+    margin-left: 1vh;
     font-family: 'Inter', sans-serif;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 69%;
     opacity: 70%;   
 }
 
 .contenedor-botones{
     position: absolute;
-    width: 43.75rem;
-    height:4.19rem;
-    margin: 1rem 32.5rem 4.5rem 15rem;
+    width: 32.5vw;
+    height: 6.5vh;
+    margin: 1vh 0 0 15vw;
 }
 
 .btn{
     position: static;
-    width: 20.5rem;
-    height: 4.19rem;
+    width: 15.5vw;
+    height: 6.5vh;
     border-radius: 24px;
 }
 
@@ -98,42 +115,46 @@ font-family: 'Inter', sans-serif;
 }
 
 .boton-secundario{
-    margin-left: 1.5rem;
+    margin-left: 1vw;
     background: #D8DFE8;
     border: 1px solid #0A3871;
-    box-sizing: border-box;
+}
+
+.seccion2 {
+    width: 30vw;
+
 }
 
 .presentacion{
     position: absolute;
-    width: 25rem;
-    height: 58.12rem;
-    margin: 2.5rem 2.5rem 2.5rem 67.5rem;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    width: 20vw;
+    height: 89vh;
+    margin: 3vh 2vw 3vh 8vw;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
     border-radius: 32px;
     background: #ffffff;
 }
 
 .munieco{
-    width: 21rem;
-    height: 19rem;
-    margin: 15.19rem 2rem 2rem 2rem;
+    width: 16vw;
+    height: 30vh;
+    margin: 22vh 2vw 0 2vw;
     vertical-align: top;
 }
 
 .contenedor-textos{
     display:block;
     position: absolute;
-    width: 21rem;
-    height: 13.87rem;
-    margin: 36.81rem 2rem 15.19rem 2rem;
+    width: 18vw;
+    height: 26vh;
+    margin: 1vh 1vw 0 1vw;
 }
 
 .alerta{
-    width: 21rem;
-    height: 3.62rem;
-    margin: 2rem;
-    font-size: 1.5rem;
+    width: 16vw;
+    height: 9vh;
+    margin: 5%;
+    font-size: 150%;
     font-weight: bold;
     Line-height: 29px;
     text-align: center;
@@ -141,10 +162,10 @@ font-family: 'Inter', sans-serif;
 }
 
 .pedido-ingresar{
-    width: 21rem;
-    height: 58px;
-    margin: 1rem 1.87rem 0 2rem;
-    font-size: 1rem;
+    width: 16vw;
+    height: 9vh;
+    margin: 5%;
+    font-size: 100%;
     Line-height: 29px;
     text-align: center;
     vertical-align: top;
@@ -152,9 +173,9 @@ font-family: 'Inter', sans-serif;
 
 #transformado{
     position: absolute;
-    width: 21rem;
-    height: 48.81rem;
-    margin: 2rem 2rem 8.19rem 2rem;
+    width: 17vw;
+    height: 75vh;
+    margin: 2vh 1.5vw 2vh 1.5vw;
     border: none;
     font-size: 16px;
     font-size: 1.5rem;
@@ -164,9 +185,9 @@ font-family: 'Inter', sans-serif;
 
 #copiar{
     position: absolute;
-    width: 21rem;
-    height: 4.19rem;
-    margin: 51.87rem 2rem 2rem 2rem;
+    width: 17vw;
+    height: 6.5vh;
+    margin: 79.5vh 1.5vw 2vh 1.5vw;
     border: 1px solid #0A3871;
     box-sizing: border-box;
     border-radius: 24px;
@@ -178,9 +199,9 @@ font-family: 'Inter', sans-serif;
 
 #copiarVerde{
     position: absolute;
-    width: 21rem;
-    height: 4.19rem;
-    margin: 51.87rem 2rem 2rem 2rem;
+    width: 17vw;
+    height: 6.5vh;
+    margin: 79.5vh 1.5vw 2vh 1.5vw;
     color: #4cd362;
     border: 1px solid #4cd362;
     box-sizing: border-box;
@@ -194,7 +215,335 @@ font-family: 'Inter', sans-serif;
 footer{
     position: absolute;
     text-align: center;
-    width: 85rem;
-    height: 1.87rem;
-    margin: 6.12rem 0 0 0;
+    width: 100%;
+    height: 3vh;
+    font-size: 80%;
+}
+
+@media only screen and (max-width: 768px) and (max-height: 1174px) {
+    body, main {
+        display: block;
+    }
+    
+    .seccion1, .seccion2, footer {
+        display: block;
+        width: 100vw;
+    }
+
+    body, main {
+        display: block;
+        direction: column;
+    }
+    
+    .seccion1, .seccion2, footer {
+        display: block;
+        width: 100vw;
+    }
+    
+    #logo, .contenedorInput, .aviso, .contenedor-botones, .presentacion, #texto-ingreso{
+        width: 93vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    
+    .munieco{
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+    
+    .presentacion{
+        height: 13vh;
+        margin-top: 10vh;
+    }
+    
+    .alerta, .pedido-ingresar{
+        width: 90vw;
+        height: 4vh; 
+        margin: 1% 2% 0 1%; 
+    }
+    
+    #logo{
+        margin-top: 4vh;
+    }
+    
+    .contenedorInput{
+        margin-top: 20vh;
+    }
+    
+    #texto-ingreso{
+        margin-left: 0;;
+    }
+    
+    .aviso{
+        margin-top: 30vh;
+    }
+    
+    .btn{
+        width: 45.5vw;
+    }
+
+    .contenedor-textos{
+        height: 0;
+    }
+    
+    footer{
+        margin-top: 1vh;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (max-height: 1384px) {
+
+    body, main {
+        display: block;
+    }
+
+    .seccion1, .seccion2, footer {
+        display: block;
+        width: 100vw;
+    }
+   
+    #logo, .contenedorInput, .aviso, .contenedor-botones, .presentacion, #texto-ingreso{
+        width: 93vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .munieco, .contenedor-textos{
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    .presentacion{
+        height: 10vh;
+        margin-top: 10vh;
+    }
+
+    .alerta, .pedido-ingresar{
+        width: 90vw;
+        height: 4vh; 
+        margin: 1% 2% 0 1%; 
+    }
+
+    #logo{
+        margin-top: 4vh;
+    }
+
+    .contenedorInput{
+        margin-top: 20vh;
+    }
+
+    #texto-ingreso{
+        margin-left: 0;
+    }
+
+    .mensaje{
+        margin-top: 8vh;
+    }
+
+    .aviso{
+        margin-top: 15svh;
+    }
+
+    .btn{
+        width: 45.5vw;
+    }  
+
+    #transformado, #copiarVerde, #copiar{
+        width: 90vw;
+        margin: 1% 2% 0 1.5%; 
+    }
+
+    #transformado{
+        height: 18vh;
+        margin-top: 2vh;
+    }
+
+    #copiarVerde, #copiar{
+        height: 6.5vh;
+        margin-top: 21vh;
+    }
+
+    #dorso{
+        height: 26vh; 
+    }
+
+    footer{
+        margin-top: 28vh;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 933px) {
+    body, main {
+        display: block;
+        direction: column;
+    }
+    
+    main{
+        height: 97vh;
+    }
+    .seccion1, .seccion2, footer {
+        display: block;
+        width: 100vw;
+    }
+   
+    #logo, .contenedorInput, .aviso, .contenedor-botones, .presentacion, #texto-ingreso{
+        width: 93vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    #logo{
+        margin-top: 2vh;
+    }
+    
+    .munieco, .contenedor-textos{
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    .contenedorInput{
+        margin-top: 14vh;
+    }
+    
+    #texto-ingreso{
+        font-size: 150%;
+        margin: 0;
+    }
+
+    .mensaje{
+        margin-top: 8vh;
+        font-size: 90%;
+    }
+
+    .aviso{
+        margin-top: 20vh;
+    }
+
+    .aviso-atencion{
+        font-size: 58%;
+    }
+
+    .btn{
+        width: 93vw;
+    }
+
+    .boton-secundario{
+        margin-top: 1.5vh;
+    }
+
+    .presentacion{
+        height: 18vh;
+        margin-top: 20vh;
+    }
+
+    .alerta, .pedido-ingresar{
+        width: 70vw;
+        height: 6vh; 
+        margin: 0 3vw 0 10.5vw;
+    }
+
+    .alerta{
+        font-size: 130%
+    }
+
+    .pedido-ingresar{
+        font-size: 75%;
+    }
+
+    footer{
+        height: 2vh;
+        margin: 0;
+        font-size: 80%;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 1715px) {
+    
+    body, main {
+        display: block;
+        direction: column;
+    }
+
+    .seccion1, .seccion2, footer {
+        display: block;
+        width: 100vw;
+    }
+
+    #logo, .contenedorInput, .aviso, .contenedor-botones, .presentacion, #texto-ingreso{
+        width: 93vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .munieco{
+        width:0;
+        height:0;
+        margin: 0;
+    }
+
+    #logo{
+        margin-bottom: 0vh;
+    }
+
+    .contenedorInput{
+        margin-top: 8vh;
+        margin-bottom: 2vh;
+    }
+    
+    #texto-ingreso{
+        margin:0vh;
+        font-size: 190%;
+    }
+
+    .aviso{
+        height: 1vh;
+        margin-top: 16vh;
+    }
+
+    .contenedor-botones{
+        margin: 0;
+    }
+
+    .btn{
+        width: 93vw;
+        height: 4vh;
+        margin-top: 0.5vh;
+    }
+
+    .boton-secundario{
+        margin-top: 1vh;
+    }
+
+    #dorso{
+        height: 37vh;
+        margin-top: 13vh;
+    }
+
+    #transformado{
+        width: 80vw;
+        height: 20vh;
+        margin: 2vh 4vw 2vh 6vw;
+    }
+
+    #copiarVerde, #copiar{
+        height: 4vh;
+        width: 80vw;
+        margin: 32vh 4vw 2vh 6vw;
+    }
+
+    footer{
+        margin-top:3vh;
+        font-weight: bold;
+        font-style: italic;
+    }
 }
