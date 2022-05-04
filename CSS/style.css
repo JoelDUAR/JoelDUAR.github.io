@@ -35,16 +35,21 @@ font-family: 'Inter', sans-serif;
 
 #logo{
     position: absolute;
+    width: 2vw;
+    height: 6vh;
+    margin: 4vh 0 0 4vw;
+}
+
+#imagenLogo{
     width: 32px;
     height:48px;
-    padding: 2% 0 0 4% ;
 }
 
 .contenedorInput{
     display: block;
     width: 24vw;
     height:18vh;
-    margin: 15vh 0 0 15vw;
+    margin: 18vh 0 0 15vw;
 }
 
 #texto-ingreso{
@@ -67,7 +72,7 @@ font-family: 'Inter', sans-serif;
     color:red;
     font-style: italic;
     text-decoration: underline;
-
+    list-style: none;
 }
 
 .aviso{
@@ -92,7 +97,7 @@ font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 69%;
-    opacity: 70%;   
+    opacity: 70%;  
 }
 
 .contenedor-botones{
@@ -122,7 +127,6 @@ font-family: 'Inter', sans-serif;
 
 .seccion2 {
     width: 30vw;
-
 }
 
 .presentacion{
@@ -220,7 +224,7 @@ footer{
     font-size: 80%;
 }
 
-@media only screen and (max-width: 768px) and (max-height: 1174px) {
+@media only screen and (min-width: 397px) and (max-width: 1024px) and (max-height: 1174px) {
     body, main {
         display: block;
     }
@@ -232,7 +236,6 @@ footer{
 
     body, main {
         display: block;
-        direction: column;
     }
     
     .seccion1, .seccion2, footer {
@@ -264,11 +267,12 @@ footer{
     }
     
     #logo{
-        margin-top: 4vh;
+        margin-top: 2vh;
+        margin-bottom: 20vh;
     }
     
     .contenedorInput{
-        margin-top: 20vh;
+        margin-top: 1vh;
     }
     
     #texto-ingreso{
@@ -288,14 +292,14 @@ footer{
     }
     
     footer{
-        margin-top: 1vh;
+        margin: 0;
         font-weight: bold;
         font-style: italic;
     }
 
 }
 
-@media only screen and (max-width: 768px) and (max-height: 1384px) {
+@media only screen and (min-width: 397px) and (max-width: 1024px) and (max-height: 1384px) {
 
     body, main {
         display: block;
@@ -379,7 +383,7 @@ footer{
     }
 }
 
-@media only screen and (max-width: 375px) and (max-height: 933px) {
+@media only screen and (max-width: 396px) and (max-height: 933px) {
     body, main {
         display: block;
         direction: column;
@@ -467,7 +471,7 @@ footer{
     }
 }
 
-@media only screen and (max-width: 375px) and (max-height: 1715px) {
+@media only screen and (max-width: 396px) and (max-height: 1715px) {
     
     body, main {
         display: block;

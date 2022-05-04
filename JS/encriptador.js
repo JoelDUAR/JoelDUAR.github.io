@@ -13,12 +13,10 @@ botonEncriptar.addEventListener("click", function(event){
     let expresion = new RegExp(patron,"g");
     if(textoIngresado == 0){
         errores.push("Ingrese texto") 
-        console.log(errores)
         return mostrarErrores(errores);
     }
     if(!expresion.test(textoIngresado)){
         errores.push("Valor Incorrecto");
-        console.log(errores)
         return mostrarErrores(errores)
     }
     form.reset();
