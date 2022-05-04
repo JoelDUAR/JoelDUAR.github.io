@@ -497,7 +497,8 @@ footer{
     }
 
     #logo{
-        margin-bottom: 0vh;
+        margin-bottom: 1vh;
+        margin-left: 1vw;
     }
 
     .contenedorInput{
@@ -512,7 +513,7 @@ footer{
 
     .aviso{
         height: 1vh;
-        margin-top: 16vh;
+        margin-top: 10vh;
     }
 
     .contenedor-botones{
@@ -523,6 +524,7 @@ footer{
         width: 93vw;
         height: 4vh;
         margin-top: 0.5vh;
+        margin-left: 2vw;
     }
 
     .boton-secundario{
@@ -537,7 +539,7 @@ footer{
     #transformado{
         width: 80vw;
         height: 20vh;
-        margin: 2vh 4vw 2vh 6vw;
+        margin: 2vh 4vw 1vh 6vw;
     }
 
     #copiarVerde, #copiar{
@@ -547,7 +549,7 @@ footer{
     }
 
     footer{
-        margin-top:3vh;
+        margin-top:1vh;
         font-weight: bold;
         font-style: italic;
     }
